@@ -30,7 +30,6 @@
       line-height: 1.7;
     }
 
-    /* NAV */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       background: rgba(247,245,242,0.92);
@@ -40,298 +39,126 @@
       padding: 0 48px;
       height: 60px;
     }
-    .nav-name {
-      font-family: var(--serif);
-      font-size: 1rem;
-      letter-spacing: 0.02em;
-    }
+    .nav-name { font-family: var(--serif); font-size: 1rem; letter-spacing: 0.02em; }
     .nav-links { display: flex; gap: 32px; list-style: none; }
     .nav-links a {
-      font-size: 0.82rem;
-      text-decoration: none;
-      color: var(--muted);
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      transition: color 0.2s;
+      font-size: 0.82rem; text-decoration: none; color: var(--muted);
+      letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.2s;
     }
     .nav-links a:hover { color: var(--accent); }
 
-    /* HERO */
     .hero {
-      min-height: 100vh;
-      display: flex; align-items: center;
-      padding: 100px 48px 60px;
-      max-width: 1100px; margin: 0 auto;
+      min-height: 100vh; display: flex; align-items: center;
+      padding: 100px 48px 60px; max-width: 1100px; margin: 0 auto;
     }
     .hero-inner {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: center;
-      width: 100%;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 80px; align-items: center; width: 100%;
     }
-    .hero-text { }
     .hero-tag {
-      font-size: 0.75rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 20px;
+      font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 20px;
       display: flex; align-items: center; gap: 10px;
     }
     .hero-tag::before {
-      content: '';
-      display: inline-block;
-      width: 28px; height: 1px;
-      background: var(--accent);
+      content: ''; display: inline-block; width: 28px; height: 1px; background: var(--accent);
     }
     h1 {
-      font-family: var(--serif);
-      font-size: clamp(2.4rem, 4vw, 3.6rem);
-      font-weight: 400;
-      line-height: 1.15;
-      margin-bottom: 12px;
+      font-family: var(--serif); font-size: clamp(2.4rem, 4vw, 3.6rem);
+      font-weight: 400; line-height: 1.15; margin-bottom: 12px;
     }
-    .hero-sub {
-      color: var(--muted);
-      font-size: 1rem;
-      margin-bottom: 28px;
-      font-weight: 400;
-    }
-    .hero-bio {
-      font-size: 0.95rem;
-      line-height: 1.85;
-      color: #3a3633;
-      max-width: 440px;
-    }
-    .hero-links {
-      display: flex; gap: 12px;
-      margin-top: 36px;
-      flex-wrap: wrap;
-    }
+    .hero-sub { color: var(--muted); font-size: 1rem; margin-bottom: 28px; font-weight: 400; }
+    .hero-bio { font-size: 0.95rem; line-height: 1.85; color: #3a3633; max-width: 440px; }
+    .hero-links { display: flex; gap: 12px; margin-top: 36px; flex-wrap: wrap; }
     .btn {
       display: inline-flex; align-items: center; gap: 7px;
-      padding: 10px 22px;
-      border-radius: 4px;
-      font-size: 0.82rem;
-      font-family: var(--sans);
-      font-weight: 500;
-      letter-spacing: 0.04em;
-      text-decoration: none;
-      transition: all 0.2s;
-      cursor: pointer;
+      padding: 10px 22px; border-radius: 4px; font-size: 0.82rem;
+      font-family: var(--sans); font-weight: 500; letter-spacing: 0.04em;
+      text-decoration: none; transition: all 0.2s; cursor: pointer;
     }
-    .btn-primary {
-      background: var(--accent);
-      color: #fff;
-      border: 1.5px solid var(--accent);
-    }
+    .btn-primary { background: var(--accent); color: #fff; border: 1.5px solid var(--accent); }
     .btn-primary:hover { background: #245a42; border-color: #245a42; }
-    .btn-outline {
-      background: transparent;
-      color: var(--text);
-      border: 1.5px solid var(--border);
-    }
+    .btn-outline { background: transparent; color: var(--text); border: 1.5px solid var(--border); }
     .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
 
     .hero-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 40px;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 16px; padding: 40px;
       display: flex; flex-direction: column; gap: 20px;
     }
+    .profile-photo {
+      width: 150px; height: 150px; border-radius: 50%;
+      object-fit: cover; object-position: center top;
+      border: 3px solid var(--border); display: block; margin: 0 auto 4px auto;
+    }
     .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-    .stat-item {
-      background: var(--bg);
-      border-radius: 10px;
-      padding: 20px;
-      text-align: center;
-    }
-    .stat-num {
-      font-family: var(--serif);
-      font-size: 2rem;
-      color: var(--accent);
-      line-height: 1;
-    }
-    .stat-label {
-      font-size: 0.72rem;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-top: 4px;
-    }
-    .award-mini {
-      background: var(--accent-light);
-      border-radius: 8px;
-      padding: 14px 18px;
-      font-size: 0.82rem;
-      color: var(--accent);
-      font-weight: 500;
-    }
-    .award-mini span { display: block; font-size: 0.72rem; color: #5a8a72; font-weight: 400; margin-top: 2px; }
+    .stat-item { background: var(--bg); border-radius: 10px; padding: 20px; text-align: center; }
+    .stat-num { font-family: var(--serif); font-size: 2rem; color: var(--accent); line-height: 1; }
+    .stat-label { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 4px; }
 
-    /* SECTIONS */
-    section {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 80px 48px;
-      border-top: 1px solid var(--border);
-    }
-    .section-label {
-      font-size: 0.72rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 8px;
-    }
-    h2 {
-      font-family: var(--serif);
-      font-size: 2rem;
-      font-weight: 400;
-      margin-bottom: 48px;
-    }
+    section { max-width: 1100px; margin: 0 auto; padding: 80px 48px; border-top: 1px solid var(--border); }
+    .section-label { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
+    h2 { font-family: var(--serif); font-size: 2rem; font-weight: 400; margin-bottom: 48px; }
 
-    /* CV TIMELINE */
     .cv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
     .cv-group h3 {
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 24px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid var(--border);
+      font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 24px; padding-bottom: 10px; border-bottom: 1px solid var(--border);
     }
     .cv-item { margin-bottom: 28px; display: flex; gap: 20px; }
-    .cv-year {
-      font-size: 0.78rem;
-      color: var(--accent);
-      font-weight: 500;
-      min-width: 90px;
-      padding-top: 2px;
-    }
-    .cv-detail strong {
-      display: block;
-      font-size: 0.92rem;
-      font-weight: 500;
-      margin-bottom: 2px;
-    }
-    .cv-detail p {
-      font-size: 0.82rem;
-      color: var(--muted);
-      line-height: 1.5;
-    }
+    .cv-year { font-size: 0.78rem; color: var(--accent); font-weight: 500; min-width: 90px; padding-top: 2px; }
+    .cv-detail strong { display: block; font-size: 0.92rem; font-weight: 500; margin-bottom: 2px; }
+    .cv-detail p { font-size: 0.82rem; color: var(--muted); line-height: 1.5; }
 
-    /* AWARDS */
     .awards-list { display: flex; flex-direction: column; gap: 12px; }
     .award-row {
       display: flex; align-items: flex-start; gap: 20px;
-      padding: 18px 24px;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      transition: border-color 0.2s;
+      padding: 18px 24px; background: var(--surface); border: 1px solid var(--border);
+      border-radius: 10px; transition: border-color 0.2s;
     }
     .award-row:hover { border-color: var(--accent); }
-    .award-year {
-      font-size: 0.8rem;
-      color: var(--accent);
-      font-weight: 500;
-      min-width: 50px;
-    }
+    .award-year { font-size: 0.8rem; color: var(--accent); font-weight: 500; min-width: 50px; }
     .award-name { font-size: 0.88rem; font-weight: 500; }
     .award-org { font-size: 0.78rem; color: var(--muted); margin-top: 2px; }
 
-    /* PUBLICATIONS */
     .pub-list { display: flex; flex-direction: column; gap: 20px; }
     .pub-item {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 24px 28px;
-      display: grid;
-      grid-template-columns: 36px 1fr;
-      gap: 16px;
-      align-items: start;
-      transition: box-shadow 0.2s, border-color 0.2s;
+      background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+      padding: 24px 28px; display: grid; grid-template-columns: 36px 1fr;
+      gap: 16px; align-items: start; transition: box-shadow 0.2s, border-color 0.2s;
     }
-    .pub-item:hover {
-      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-      border-color: #c8d8cf;
-    }
-    .pub-num {
-      font-family: var(--serif);
-      font-size: 1.1rem;
-      color: var(--border);
-      text-align: right;
-      padding-top: 2px;
-    }
-    .pub-title {
-      font-size: 0.9rem;
-      font-weight: 500;
-      line-height: 1.5;
-      margin-bottom: 6px;
-    }
+    .pub-item:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.06); border-color: #c8d8cf; }
+    .pub-num { font-family: var(--serif); font-size: 1.1rem; color: var(--border); text-align: right; padding-top: 2px; }
+    .pub-title { font-size: 0.9rem; font-weight: 500; line-height: 1.5; margin-bottom: 6px; }
     .pub-authors { font-size: 0.78rem; color: var(--muted); margin-bottom: 6px; line-height: 1.5; }
     .pub-authors strong { color: var(--text); font-weight: 500; }
     .pub-journal {
-      display: inline-block;
-      font-size: 0.75rem;
-      font-style: italic;
-      color: var(--accent);
-      background: var(--accent-light);
-      padding: 2px 10px;
-      border-radius: 20px;
+      display: inline-block; font-size: 0.75rem; font-style: italic;
+      color: var(--accent); background: var(--accent-light); padding: 2px 10px; border-radius: 20px;
     }
     .pub-badge {
-      display: inline-block;
-      font-size: 0.68rem;
-      font-style: normal;
-      color: #b5621e;
-      background: #fef3e8;
-      padding: 2px 8px;
-      border-radius: 20px;
-      margin-left: 6px;
-      font-family: var(--sans);
+      display: inline-block; font-size: 0.68rem; font-style: normal;
+      color: #b5621e; background: #fef3e8; padding: 2px 8px;
+      border-radius: 20px; margin-left: 6px; font-family: var(--sans);
     }
 
-    /* CONTACT */
     .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
     .contact-info p { font-size: 0.95rem; color: #3a3633; line-height: 1.9; max-width: 380px; }
     .contact-links { display: flex; flex-direction: column; gap: 14px; }
     .contact-link {
-      display: flex; align-items: center; gap: 14px;
-      padding: 18px 22px;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      text-decoration: none;
-      color: var(--text);
-      font-size: 0.88rem;
+      display: flex; align-items: center; gap: 14px; padding: 18px 22px;
+      background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+      text-decoration: none; color: var(--text); font-size: 0.88rem;
       transition: border-color 0.2s, background 0.2s;
     }
     .contact-link:hover { border-color: var(--accent); background: var(--accent-light); }
     .contact-icon { font-size: 1.1rem; width: 20px; text-align: center; }
 
-    /* FOOTER */
     footer {
-      border-top: 1px solid var(--border);
-      text-align: center;
-      padding: 32px 48px;
-      font-size: 0.78rem;
-      color: var(--muted);
+      border-top: 1px solid var(--border); text-align: center;
+      padding: 32px 48px; font-size: 0.78rem; color: var(--muted);
     }
 
-    /* ANIMATIONS */
-    .fade-in {
-      opacity: 0;
-      transform: translateY(18px);
-      transition: opacity 0.65s ease, transform 0.65s ease;
-    }
-    .fade-in.visible { opacity: 1; transform: translateY(0); }
-
-    /* RESPONSIVE */
     @media (max-width: 768px) {
       nav { padding: 0 20px; }
       .nav-links { gap: 18px; }
@@ -343,7 +170,6 @@
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <div class="nav-name">Jieun Choi</div>
   <ul class="nav-links">
@@ -354,157 +180,122 @@
   </ul>
 </nav>
 
-<!-- HERO / ABOUT -->
 <section id="about" style="border-top:none; padding-top: 0;">
   <div class="hero">
     <div class="hero-inner">
-      <div class="hero-text fade-in">
+      <div class="hero-text">
         <div class="hero-tag">Post-doctoral Fellow · IBS</div>
         <h1>Jieun<br/>Choi</h1>
-        <p class="hero-sub">Ph.D. · Biomedical Optics & Vascular Biology</p>
+        <p class="hero-sub">Ph.D. · Biomedical Optics &amp; Vascular Biology</p>
         <p class="hero-bio">
           I am a post-doctoral fellow at the Institute for Basic Science (IBS), Center for Vascular Biology. My research focuses on intravital imaging, lymphatic biology, and advanced optical techniques to understand vascular and cerebral physiology in living systems.
         </p>
         <div class="hero-links">
-          <a href="mailto:jec970@gmail.com" class="btn btn-primary">✉ Get in Touch</a>
+          <a href="mailto:jec970@gmail.com" class="btn btn-primary">&#9993; Get in Touch</a>
           <a href="#publications" class="btn btn-outline">View Publications</a>
         </div>
       </div>
-      <div class="hero-card fade-in" style="transition-delay:0.15s">
-        <img src="profile.jpg" alt="Jieun Choi" style="width:150px;height:150px;border-radius:50%;object-fit:cover;object-position:center top;border:3px solid var(--border);display:block;margin:0 auto 20px auto;" />
+      <div class="hero-card">
+        <img src="profile.jpg" alt="Jieun Choi" class="profile-photo" />
         <div class="stat-grid">
-          <div class="stat-item">
-            <div class="stat-num">9</div>
-            <div class="stat-label">Publications</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-num">4+</div>
-            <div class="stat-label">Awards</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-num">KAIST</div>
-            <div class="stat-label">Ph.D.</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-num">IBS</div>
-            <div class="stat-label">Current</div>
-          </div>
+          <div class="stat-item"><div class="stat-num">9</div><div class="stat-label">Publications</div></div>
+          <div class="stat-item"><div class="stat-num">4+</div><div class="stat-label">Awards</div></div>
+          <div class="stat-item"><div class="stat-num">KAIST</div><div class="stat-label">Ph.D.</div></div>
+          <div class="stat-item"><div class="stat-num">IBS</div><div class="stat-label">Current</div></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CV -->
 <section id="cv">
   <div class="section-label">Background</div>
   <h2>Curriculum Vitae</h2>
   <div class="cv-grid">
-    <div class="cv-group fade-in">
+    <div class="cv-group">
       <h3>Education</h3>
       <div class="cv-item">
-        <div class="cv-year">2021–2026</div>
+        <div class="cv-year">2021&#8211;2026</div>
         <div class="cv-detail">
           <strong>M.S./Ph.D. in Medical Science and Engineering</strong>
           <p>Korea Advanced Institute of Science and Technology (KAIST)<br/>Advisor: Prof. Pilhan Kim</p>
         </div>
       </div>
       <div class="cv-item">
-        <div class="cv-year">2015–2019</div>
+        <div class="cv-year">2015&#8211;2019</div>
         <div class="cv-detail">
           <strong>B.S. in Chemical and Biomolecular Engineering</strong>
           <p>Korea Advanced Institute of Science and Technology (KAIST)</p>
         </div>
       </div>
-
-      <h3 style="margin-top: 36px;">Professional Experience</h3>
+      <h3 style="margin-top:36px;">Professional Experience</h3>
       <div class="cv-item">
-        <div class="cv-year">2026–</div>
+        <div class="cv-year">2026&#8211;</div>
         <div class="cv-detail">
           <strong>Post-doctoral Fellow</strong>
           <p>IBS, Center for Vascular Biology<br/>Advisor: Prof. Gou Young Koh</p>
         </div>
       </div>
       <div class="cv-item">
-        <div class="cv-year">2024–2026</div>
+        <div class="cv-year">2024&#8211;2026</div>
         <div class="cv-detail">
           <strong>Student Intern</strong>
           <p>IBS, Center for Vascular Biology<br/>Advisor: Prof. Gou Young Koh</p>
         </div>
       </div>
       <div class="cv-item">
-        <div class="cv-year">2022–2024</div>
+        <div class="cv-year">2022&#8211;2024</div>
         <div class="cv-detail">
           <strong>Student Intern</strong>
           <p>KAIST, Electrical Engineering<br/>Advisor: Prof. Young-Gyu Yoon</p>
         </div>
       </div>
       <div class="cv-item">
-        <div class="cv-year">2019–2021</div>
+        <div class="cv-year">2019&#8211;2021</div>
         <div class="cv-detail">
           <strong>Scientist</strong>
-          <p>Samsung Biologics, CDO R&D Team</p>
+          <p>Samsung Biologics, CDO R&amp;D Team</p>
         </div>
       </div>
     </div>
 
-    <div class="cv-group fade-in" style="transition-delay:0.1s">
-      <h3>Awards & Honors</h3>
+    <div class="cv-group">
+      <h3>Awards &amp; Honors</h3>
       <div class="awards-list">
         <div class="award-row">
-          <div class="award-year">2024–25</div>
-          <div>
-            <div class="award-name">Medical Bioscience Graduate Student Scholarship</div>
-            <div class="award-org">ASAN Foundation</div>
-          </div>
+          <div class="award-year">2024&#8211;25</div>
+          <div><div class="award-name">Medical Bioscience Graduate Student Scholarship</div><div class="award-org">ASAN Foundation</div></div>
         </div>
         <div class="award-row">
           <div class="award-year">2024</div>
-          <div>
-            <div class="award-name">Oral Presentation Award</div>
-            <div class="award-org">IVBM 2024: International Vascular Biology Meeting</div>
-          </div>
+          <div><div class="award-name">Oral Presentation Award</div><div class="award-org">IVBM 2024: International Vascular Biology Meeting</div></div>
         </div>
         <div class="award-row">
           <div class="award-year">2024</div>
-          <div>
-            <div class="award-name">Best Poster Award</div>
-            <div class="award-org">KSCBFM 2024: Korean Society for Cerebral Blood Flow and Metabolism</div>
-          </div>
+          <div><div class="award-name">Best Poster Award</div><div class="award-org">KSCBFM 2024: Korean Society for Cerebral Blood Flow and Metabolism</div></div>
         </div>
         <div class="award-row">
           <div class="award-year">2023</div>
-          <div>
-            <div class="award-name">Young Investigator Award</div>
-            <div class="award-org">SPIE ABC 2023: Advanced Biophotonics Conference</div>
-          </div>
+          <div><div class="award-name">Young Investigator Award</div><div class="award-org">SPIE ABC 2023: Advanced Biophotonics Conference</div></div>
         </div>
         <div class="award-row">
           <div class="award-year">2022</div>
-          <div>
-            <div class="award-name">Young Investigator Award</div>
-            <div class="award-org">ABC 2022: Advanced Biophotonics Conference</div>
-          </div>
+          <div><div class="award-name">Young Investigator Award</div><div class="award-org">ABC 2022: Advanced Biophotonics Conference</div></div>
         </div>
         <div class="award-row">
           <div class="award-year">2019</div>
-          <div>
-            <div class="award-name">Undergraduate Academic Scholarship</div>
-            <div class="award-org">Samsung Biologics</div>
-          </div>
+          <div><div class="award-name">Undergraduate Academic Scholarship</div><div class="award-org">Samsung Biologics</div></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PUBLICATIONS -->
 <section id="publications">
   <div class="section-label">Research</div>
   <h2>Publications</h2>
   <div class="pub-list">
-
-    <div class="pub-item fade-in">
+    <div class="pub-item">
       <div class="pub-num">1</div>
       <div>
         <div class="pub-title">Adrenergic control of cervical lymphatics for CSF outflow is reduced with ageing</div>
@@ -512,8 +303,7 @@
         <span class="pub-journal">Nature</span><span class="pub-badge">Under review</span>
       </div>
     </div>
-
-    <div class="pub-item fade-in">
+    <div class="pub-item">
       <div class="pub-num">2</div>
       <div>
         <div class="pub-title">Leptomeningeal Immune Niche Sustains Effector CD8+ T Cells in Cerebral Malaria</div>
@@ -521,17 +311,15 @@
         <span class="pub-journal">Nature Microbiology</span><span class="pub-badge">Submitted</span>
       </div>
     </div>
-
-    <div class="pub-item fade-in">
+    <div class="pub-item">
       <div class="pub-num">3</div>
       <div>
         <div class="pub-title">Increased CSF drainage by non-invasive manipulation of cervical lymphatics</div>
-        <div class="pub-authors">Jin H, Yoon JH, Hong SP, Hwang YS, Yang MJ, <strong>Choi J</strong>, Kang HJ, …, Koh GY</div>
-        <span class="pub-journal">Nature, 643, 755–767, 2025</span>
+        <div class="pub-authors">Jin H, Yoon JH, Hong SP, Hwang YS, Yang MJ, <strong>Choi J</strong>, Kang HJ, &#8230;, Koh GY</div>
+        <span class="pub-journal">Nature, 643, 755&#8211;767, 2025</span>
       </div>
     </div>
-
-    <div class="pub-item fade-in">
+    <div class="pub-item">
       <div class="pub-num">4</div>
       <div>
         <div class="pub-title">Self-supervised denoising of dynamic fluorescence images via temporal gradient-empowered deep learning</div>
@@ -539,8 +327,7 @@
         <span class="pub-journal">PhotoniX, 6, 15, 2025</span>
       </div>
     </div>
-
-    <div class="pub-item fade-in">
+    <div class="pub-item">
       <div class="pub-num">5</div>
       <div>
         <div class="pub-title">Preserving spatial and quantitative information in unpaired biomedical image-to-image translation</div>
@@ -548,8 +335,7 @@
         <span class="pub-journal">Cell Reports Methods, 5(6), 101074, 2025</span>
       </div>
     </div>
-
-    <div class="pub-item fade-in">
+    <div class="pub-item">
       <div class="pub-num">6</div>
       <div>
         <div class="pub-title">Synthetic Bilirubin-Based Nanomedicine Alleviates Atopic Dermatitis by Reducing Oxidative Stress and Modulating Immune Responses</div>
@@ -557,59 +343,54 @@
         <span class="pub-journal">Advanced Therapeutics, 2400403, 2025</span>
       </div>
     </div>
-
-    <div class="pub-item fade-in">
+    <div class="pub-item">
       <div class="pub-num">7</div>
       <div>
         <div class="pub-title">In vivo longitudinal 920 nm two-photon intravital kidney imaging of a dynamic 2,8-DHA crystal formation and tubular deterioration in the adenine-induced CKD mouse model</div>
         <div class="pub-authors"><strong>Choi J</strong>, Choi MS, Jeon J, Moon J, Lee J, Kong E, Lucia SE, Hong S, Lee JH, Lee EY, Kim P</div>
-        <span class="pub-journal">Biomedical Optics Express, 14(4), 1647–1658, 2023</span>
+        <span class="pub-journal">Biomedical Optics Express, 14(4), 1647&#8211;1658, 2023</span>
       </div>
     </div>
-
-    <div class="pub-item fade-in">
+    <div class="pub-item">
       <div class="pub-num">8</div>
       <div>
         <div class="pub-title">Fabrication of scratched nanogrooves for highly oriented cell alignment and application as a wound healing dressing</div>
         <div class="pub-authors">Shin MJ*, Im SH*, Kim B*, <strong>Choi J*</strong>, Lucia SE, Kim W, Park JG, Kim P, Chung HJ, Yoon DK <span style="color:#999">(*co-first)</span></div>
-        <span class="pub-journal">ACS Applied Materials & Interfaces, 15(15), 18653–18662, 2023</span>
+        <span class="pub-journal">ACS Applied Materials &amp; Interfaces, 15(15), 18653&#8211;18662, 2023</span>
       </div>
     </div>
-
-    <div class="pub-item fade-in">
+    <div class="pub-item">
       <div class="pub-num">9</div>
       <div>
         <div class="pub-title">Statistically unbiased prediction enables accurate denoising of voltage imaging data</div>
-        <div class="pub-authors">Eom M, Han S, Park P, …, <strong>Choi J</strong>, Lucia SE, …, Yoon YG</div>
-        <span class="pub-journal">Nature Methods, 20(10), 1581–1592, 2023</span>
+        <div class="pub-authors">Eom M, Han S, Park P, &#8230;, <strong>Choi J</strong>, Lucia SE, &#8230;, Yoon YG</div>
+        <span class="pub-journal">Nature Methods, 20(10), 1581&#8211;1592, 2023</span>
       </div>
     </div>
-
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
   <div class="section-label">Connect</div>
   <h2>Contact</h2>
   <div class="contact-grid">
-    <div class="contact-info fade-in">
+    <div class="contact-info">
       <p>
         I'm always open to discussions about research collaborations, scientific questions, and opportunities in biomedical optics and vascular biology.<br/><br/>
         Currently based at IBS Center for Vascular Biology, Daejeon, South Korea.
       </p>
     </div>
-    <div class="contact-links fade-in" style="transition-delay:0.1s">
+    <div class="contact-links">
       <a href="mailto:jec970@gmail.com" class="contact-link">
-        <span class="contact-icon">✉</span>
+        <span class="contact-icon">&#9993;</span>
         <span>jec970@gmail.com</span>
       </a>
       <a href="https://vascular.ibs.re.kr/" target="_blank" class="contact-link">
-        <span class="contact-icon">🏛</span>
+        <span class="contact-icon">&#127963;</span>
         <span>IBS Center for Vascular Biology</span>
       </a>
       <a href="https://scholar.google.com/citations?hl=ko&user=jXFILvIAAAAJ" target="_blank" class="contact-link">
-        <span class="contact-icon">🎓</span>
+        <span class="contact-icon">&#127891;</span>
         <span>Google Scholar</span>
       </a>
     </div>
@@ -617,10 +398,8 @@
 </section>
 
 <footer>
-  © 2026 Jieun Choi · Post-doctoral Fellow, IBS Center for Vascular Biology
+  &#169; 2026 Jieun Choi &middot; Post-doctoral Fellow, IBS Center for Vascular Biology
 </footer>
 
-<script>
-  // Intersection Observer for fade-in
-  const observer = new IntersectionObserver((entries) => {
-    entr
+</body>
+</html>
